@@ -49,6 +49,7 @@ public class PService {
             patientRepository.save(p);
             return true;
         }catch (Exception e){
+            System.out.println(e);
             return false;
         }
     }

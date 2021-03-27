@@ -7,4 +7,5 @@ import java.util.List;
 
 public interface PatientRepository extends JpaRepository<Patient, String> {
     List<Patient> findAllByOrderByEmailAsc();
+    Patient findByEmail(String email);
 }

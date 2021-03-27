@@ -3,7 +3,6 @@ package com.example.PatientSystem.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.validation.constraints.Email;
 import java.util.Date;
 
 @Entity
@@ -19,8 +18,7 @@ public class BookAppointment {
     public BookAppointment() {
     }
 
-    public BookAppointment(int id, @Email String email, Date date, String doctorName) {
-        this.id = id;
+    public BookAppointment(String email, Date date, String doctorName) {
         this.email = email;
         this.date = date;
         this.doctorName = doctorName;

@@ -1,27 +1,22 @@
 package com.example.PatientSystem.model;
 
-import org.hibernate.validator.constraints.Length;
-import org.springframework.format.annotation.NumberFormat;
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.validation.constraints.Email;
-import javax.validation.constraints.Pattern;
 
 @Entity
 public class Patient {
 
     @Id
-    @Email
+//    @Email
     private String email;
-    @Length(min = 3)
+//    @Length(min = 3)
     private String name;
-    @Length(min = 10)
+//    @Length(min = 10)
     private String address;
-    @Length(min = 10)
-    @NumberFormat(style = NumberFormat.Style.NUMBER)
+//    @Length(min = 10)
+//    @NumberFormat(style = NumberFormat.Style.NUMBER)
     private long mobileNumber;
-    @Pattern(regexp = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,15}$")
+//    @Pattern(regexp = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,}$")
     private String password;
 
     public Patient() {
