@@ -41,7 +41,7 @@ public class JWTFilter extends OncePerRequestFilter {
         }
 
 //        check username is not null and checks that security content is available or not
-        if(username!=null && SecurityContextHolder.getContext().getAuthentication()==null){
+        if(username!=null    && SecurityContextHolder.getContext().getAuthentication()==null){
 
 //            created a userDetails with help to myUser class method
             UserDetails userDetails = myUser.loadUserByUsername(username);

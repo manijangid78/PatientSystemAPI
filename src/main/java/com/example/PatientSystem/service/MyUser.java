@@ -35,7 +35,6 @@ public class MyUser implements UserDetailsService {
 
     public Patient save(Patient patient) {
         patient.setPassword(bcryptEncoder.encode(patient.getPassword()));
-//        patient.setPassword(bcryptEncoder.encode(patient.getPassword()));
         return patientRepository.save(patient);
     }
 
