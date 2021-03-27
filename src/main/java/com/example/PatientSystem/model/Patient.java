@@ -18,7 +18,7 @@ public class Patient {
     private String name;
     @Length(min = 10)
     private String address;
-    @Length(min = 10)
+//    @Length(min = 10)
     @NumberFormat(style = NumberFormat.Style.NUMBER)
     private long mobileNumber;
     @Pattern(regexp = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,}$")

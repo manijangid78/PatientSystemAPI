@@ -69,7 +69,7 @@ public class PService {
     }
 
     public List<BookAppointment> getAllBookAppointment(){
-        return bookAppointmentRepository.findAll();
+        return bookAppointmentRepository.findAllByOrderByDateAsc();
     }
 
 }
